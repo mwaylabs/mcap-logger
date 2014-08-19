@@ -1,0 +1,20 @@
+{
+  "name": "mcap-logger",
+  "version": "0.0.0",
+  "description": "Connect a logger against the mCAP Logger REST API with node",
+  "main": "lib/logger.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^1.21.4",
+    "chai": "^1.9.1",
+    "sinon": "^1.10.3"
+  },
+  "dependencies": {
+    "q": "^1.0.1",
+    "request": "^2.40.0"
+  }
+}
