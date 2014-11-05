@@ -1,20 +1,51 @@
 {
   "name": "mcap-logger",
-  "version": "0.0.0",
   "description": "Connect a logger against the mCAP Logger REST API with node",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mwaylabs/mcap-logger",
+  "bugs": "https://github.com/mwaylabs/mcap-logger/issues",
+  "license": "MIT",
   "main": "lib/logger.js",
-  "scripts": {
-    "test": "mocha test"
+  "author": {
+    "name": "mwaylabs"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "mocha": "^1.21.4",
-    "chai": "^1.9.1",
-    "sinon": "^1.10.3"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mwaylabs/mcap-logger"
   },
+  "keywords": [],
   "dependencies": {
-    "q": "^1.0.1",
-    "request": "^2.40.0"
+    "archiver": "^0.11.0",
+    "debug": "1.0.4",
+    "fstream-ignore": "^1.0.1",
+    "lodash": "2.4.1",
+    "node-formdata": "^0.1.5",
+    "q": "2.0.2",
+    "request": "^2.40.0",
+    "verror": "^1.4.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "coveralls": "^2.10.0",
+    "globule": "^0.2.0",
+    "gulp": "^3.6.2",
+    "gulp-bump": "^0.1.8",
+    "gulp-istanbul": "^0.2.0",
+    "gulp-jscs": "^0.4.2",
+    "gulp-jshint": "^1.5.5",
+    "gulp-load-plugins": "^0.5.1",
+    "gulp-mocha": "^0.4.1",
+    "gulp-plumber": "^0.6.2",
+    "gulp-util": "2.2.16",
+    "jshint-stylish": "^0.2.0",
+    "mkdirp": "^0.5.0",
+    "rimraf": "^2.2.8",
+    "should": "^3.3.1",
+    "sinon": "^1.10.3",
+    "unzip": "^0.1.11"
+  },
+  "scripts": {
+    "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "gulp test"
   }
 }
