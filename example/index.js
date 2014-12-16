@@ -24,3 +24,5 @@ logger.output = function(log){
         });
     }
 };
+
+process.stdin.resume();
