@@ -1,7 +1,7 @@
 {
   "name": "mcap-logger",
   "description": "Connect a logger against the mCAP Logger REST API with node",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/mwaylabs/mcap-logger",
   "bugs": "https://github.com/mwaylabs/mcap-logger/issues",
   "license": "MIT",
@@ -16,11 +16,11 @@
   "keywords": [],
   "dependencies": {
     "archiver": "^0.11.0",
-    "debug": "1.0.4",
+    "debug": "^1.0.4",
     "fstream-ignore": "^1.0.1",
-    "lodash": "2.4.1",
+    "lodash": "^2.4.1",
     "node-formdata": "^0.1.5",
-    "q": "2.0.2",
+    "q": "^2.0.3",
     "request": "^2.40.0",
     "verror": "^1.4.0"
   },
